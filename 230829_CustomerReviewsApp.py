@@ -6,6 +6,7 @@ import plotly.express as px
 import openai
 import tiktoken
 import numpy as np
+import plotly
 
 openai.api_key = ""
 
