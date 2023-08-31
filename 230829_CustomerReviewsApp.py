@@ -176,7 +176,7 @@ if uploaded_file is not None:
             lineChart, areaChart = plot_sentiment_graph(grouped_df)
             
             col1, col2 = st.columns([1,1])
-            col1.plotly_chart(lineChart)
+            col1.write(plotly.io.to_html(lineChart))
             col2.plotly_chart(areaChart)
 
         else:
